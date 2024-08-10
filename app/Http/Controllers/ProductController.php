@@ -35,7 +35,7 @@ class ProductController extends Controller
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
-        $request->validate();
+
         $imagePath = null;
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('images', 'public');
@@ -46,7 +46,7 @@ class ProductController extends Controller
             'price' => $request->price,
             'image' => $imagePath,
         ]);
-        new ProductResource($product);
+        return new ProductResource($product);
     }
 
     public function update(Request $request, $id)

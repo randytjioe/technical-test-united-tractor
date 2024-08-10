@@ -46,7 +46,7 @@ class ProductCategoryController extends Controller
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
-        $request->validate();
+
 
         $category = CategoryProduct::find($id);
         if ($category) {
