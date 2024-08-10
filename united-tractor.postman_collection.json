@@ -364,19 +364,35 @@
 								}
 							]
 						},
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"name\":\"penggaris\",\n    \"price\":5000,\n    \"image\":\"image.png\",\n    \"product_category_id\":1\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "laptop",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "product_category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/thinkpad/Downloads/Randy Frog.png"
 								}
-							}
+							]
 						},
 						"url": {
-							"raw": "{{URL}}/api/products/3",
+							"raw": "{{URL}}/api/products/3?_method=PUT",
 							"host": [
 								"{{URL}}"
 							],
@@ -387,9 +403,8 @@
 							],
 							"query": [
 								{
-									"key": "",
-									"value": "",
-									"disabled": true
+									"key": "_method",
+									"value": "PUT"
 								}
 							]
 						}
@@ -458,7 +473,7 @@
 		},
 		{
 			"key": "token",
-			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzIzMjk1MzI2LCJleHAiOjE3MjMyOTg5MjYsIm5iZiI6MTcyMzI5NTMyNiwianRpIjoiQ0c4STVCcmJmeld6NnUxUSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-KC5ED2ERWchb_TnvOzZMamgi11MiWlhYq_VxuG5FSk",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzIzMzAxNTkwLCJleHAiOjE3MjMzMDUxOTAsIm5iZiI6MTcyMzMwMTU5MCwianRpIjoiTHMzMGpqWHJDTllZcVJmUCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EcULu6rBPGbbENP8Wa59H1_p6Sp_TMT1mqFNYwb2qjc",
 			"type": "string"
 		}
 	]

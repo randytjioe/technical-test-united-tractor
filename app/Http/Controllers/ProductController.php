@@ -55,7 +55,7 @@ class ProductController extends Controller
             'product_category_id' => 'required|exists:category_products,id',
             'name' => 'required|string|max:255',
             'price' => 'required|numeric|min:0',
-            'image' => 'nullable',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
     
         if ($validator->fails()) {
