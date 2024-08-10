@@ -76,7 +76,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzIzMjYzNzk4LCJleHAiOjE3MjMyNjczOTgsIm5iZiI6MTcyMzI2Mzc5OCwianRpIjoib2xDZU9meE40cFVTaVRuMyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.bqRgHVvpm9TGBYcG2hwrcM4EHwhG_Rdt4fFgw0WfW5Y",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -141,7 +141,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzIzMjcwODI5LCJleHAiOjE3MjMyNzQ0MjksIm5iZiI6MTcyMzI3MDgyOSwianRpIjoia3VyZ0VFTHZEZElIYlV6WCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0I0I6n0Dofr34i4OjIQIyyxayQiIST5N2BQhA6Vh4S8",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -163,14 +163,14 @@
 					"response": []
 				},
 				{
-					"name": "update category bu id",
+					"name": "update category by id",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzIzMjcwODI5LCJleHAiOjE3MjMyNzQ0MjksIm5iZiI6MTcyMzI3MDgyOSwianRpIjoia3VyZ0VFTHZEZElIYlV6WCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0I0I6n0Dofr34i4OjIQIyyxayQiIST5N2BQhA6Vh4S8",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"meja\"\n}",
+							"raw": "{\n    \"name\": \"Kursi\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -254,7 +254,7 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "kursi",
+									"value": "Papan Tulis",
 									"type": "text"
 								},
 								{
