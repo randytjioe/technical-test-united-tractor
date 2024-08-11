@@ -148,7 +148,8 @@ Proyek ini adalah API Laravel sederhana yang digunakan untuk mengelola produk da
 
 - **Memperbarui Produk Berdasarkan ID**
   - Endpoint: `/products/{id}`
-  - Method: `PUT`
+  - Method: `POST`
+  - Parameter:`_method=PUT`
   - Body:
     ```json
     {
